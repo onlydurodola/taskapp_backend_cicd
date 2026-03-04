@@ -6,7 +6,7 @@ python-dotenv==1.0.0
 PyJWT==2.8.0
 gunicorn==21.2.0
 
-# NEW: Database migrations
+## NEW: Database migrations
 alembic==1.13.1
 
 # NEW: Testing
