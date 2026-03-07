@@ -48,11 +48,11 @@ jobs:
 
             # Run migrations (KEY STEP FOR TEACHING)
             sudo -u taskapp \
-              DATABASE_HOST="${{ secrets.DB_HOST }}" \
-              DATABASE_PORT="${{ secrets.DB_PORT }}" \
-              DATABASE_NAME="${{ secrets.DB_NAME }}" \
-              DATABASE_USER="${{ secrets.DB_USER }}" \
-              DATABASE_PASSWORD="${{ secrets.DB_PASSWORD }}" \
+              DATABASE_HOST="${{ secrets.DATABASE_HOST }}" \
+              DATABASE_PORT="${{ secrets.DATABASE_PORT }}" \
+              DATABASE_NAME="${{ secrets.DATABASE_NAME }}" \
+              DATABASE_USER="${{ secrets.DATABASE_USER }}" \
+              DATABASE_PASSWORD="${{ secrets.DATABASE_PASSWORD }}" \
               venv/bin/alembic upgrade head
 
             # Restart
